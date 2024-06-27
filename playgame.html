@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Css/playgame.css" rel="stylesheet" type="text/css" />
+    
+    <title>Play-Game</title>
+</head> 
+
+<body>
+    <!-- <a class="back" href="index.html">Back</a> -->
+   
+<main>
+
+   <h3>Let's make a record!</h3>
+
+   <div id="row2"> 
+    <div id="player-display">
+        <img id="player-avatar" alt="avatar">
+        <p id="player-name-display"></p>
+    </div>
+   <div><button id="play-again">Reset</button>
+    <button id="home"><a class="back" href="index.html">Home</a></button>
+  </div>
+   </div>
+   <div class="score-container">
+    <p id="score" >Score<span id="score-value" >0</span></p>
+    <p id="bestScore" >Best Score<span id="best-score-value" >0</span></p>
+    <div id="points"></div>
+   </div>
+    <div id="game-board"></div>
+
+    
+
+      <div class="arrow-btn">
+        <button id="up-btn">
+          <img src="./assets/right-arrow.png" alt="Arrow" />
+        </button>
+        <button id="left-btn">
+          <img src="./assets/right-arrow.png" alt="Arrow" />
+        </button>
+        <button id="down-btn">
+          <img src="./assets/right-arrow.png" alt="Arrow" />
+        </button>
+        <button id="right-btn">
+          <img src="./assets/right-arrow.png" alt="Arrow" />
+        </button>
+      </div>
+    </main>
+
+      
+    <div class="modal" id="game-over">
+        <div class="modal-content">
+          <h2>Game Over!</h2>
+          <div id="new-record" style="display:none">New Record!</div>
+          <p id="showFainalScore"></p>
+          <img src="assets/GameOver.jpg" alt="Game Over"><br>
+          <button id="replay">Play Again</button>
+          <button id="backhome"><a href="index.html">Back Home</a></button>
+        </div>
+      </div>
+
+    <script src="./js/playgame.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(164, 165, 184);
+    font-size: 7.5vmin;
+    color: rgb(38, 42, 104);
+}
+h1{
+    font-family: 'Protest Riot';
+}
+
+
+button{
+    /* margin: 2vmin 0; */
+    width: 20vmin;
+    height: 10vmin;
+    border-radius: 2vmin;
+    font-family: 'Playfair Display';
+    font-size: 3.5vmin;
+    /* font-style: italic; */
+    border: none;
+    background-color:  rgb(38, 42, 104);
+    color: bisque;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+button:hover{
+    background-color:bisque  ;
+    color: rgb(38, 42, 104);
+
+}
+
+#player-name{
+    margin: 3vmin 0;
+    width: 40vmin;
+    height: 8vmin;
+    border-radius: 2vmin;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 2vmin;
+    padding-left: 3vmin;
+    border: none;
+
+}
+
+#welcome-page{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+section{
+    
+    padding: 4vmin;
+    border-radius: 2vmin;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+}
